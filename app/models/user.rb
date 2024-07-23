@@ -5,5 +5,5 @@ class User < ApplicationRecord
          :jwt_authenticatable, jwt_revocation_strategy: JwtBlacklist
 
   # Ajoute les attributs supplémentaires pour le prénom et le nom
-  # validates :first_name, :last_name, presence: true
+  validates :first_name, :last_name, presence: true
 end
